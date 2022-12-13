@@ -1,0 +1,542 @@
+
+/* generales */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    font-family: cursive;
+
+} 
+
+
+
+html {
+     background-color: #e5e5f7;
+     opacity: 0.8;
+     background-image:  radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+     background-size: 20px 20px;
+     background-position: 0 0,10px 10px;
+     scroll-behavior: smooth;
+}
+.container {
+     border-radius: 15px;
+     background-color: rgb(255, 255, 255);
+     margin: 15px 15px ;
+     padding: 15px 15px ;
+     
+}
+a {
+    text-decoration: none;
+    color: rgb(161, 172, 179);
+    list-style: none;
+}
+a:hover {
+    color: rgb(78,45n, 224);
+    font-size: 1.10em;
+}
+h1 {font-size: 3em;
+    text-decoration: solid;
+    
+    
+}
+/* cabeza */
+
+header img {
+    height: 50px;
+    width: 50px;
+   }
+   
+.bote {
+    inline-size: 100%;
+
+    background-repeat: no-repeat;
+    display: none;
+    
+    animation: movimientobote;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    
+    
+
+}
+.esteto {
+    inline-size: 100%;
+    display: none;
+    background-repeat: no-repeat;
+    
+    animation: movimientoesteto;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    
+    
+
+}
+.fichero {
+    inline-size: 100%;
+    display: none;
+    background-size: cover ;
+    background-repeat: no-repeat;
+    position: absolute;
+
+    animation: movimientofichero;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+ header .container {
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 20px 20px;
+    border-top-right-radius: 20px 20px;
+    margin: 15px 15px;
+    background-color: rgb(255, 255, 255, .25);
+    
+    
+    
+   
+
+    
+ }
+.logo {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 10px;
+    
+}
+.link {
+
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 10px;
+    align-items: flex-end;
+}
+.link a {
+    color: black ;
+}
+nav a {
+    padding: 5px;
+    
+}
+/* aca termina cbeza */
+
+/* aca arranca el hero */
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: center center;
+    background-position: center center;
+    background-image:url("../media/hero.jpg");
+    border-radius: 15px;
+
+   
+}
+.heroe button {
+    font-size: 2em;
+    background-image: url("../media/puerta01.PNG");
+    background-size: cover;
+    border-radius: 50px;
+    border: 15px 15px;
+    height: 250px;
+    width: 120px;
+    
+}
+ button:hover {
+
+   background-size: cover;
+    background-image: url("../media/puerta02.PNG") ;
+    
+}
+#hero h1 {
+    padding: 25px 25px;
+}
+#hero .container {
+    border-radius: 15px;
+    margin: 15px 15px;
+
+}
+
+/* aca termina el hero */
+
+
+#Tuzona .container {
+    border-radius: 15px;
+    background-size: contain;
+    
+    display: flex;
+    flex-direction: column;
+    margin: 15px 15px;
+
+}
+
+#Tuzona .container {
+    display: flex;
+    flex-direction: row;
+   
+}
+
+#Tuzona .imagen {
+  background-image: url("../media/medicozona.jpg");
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-size: cover;
+  
+  
+}
+
+#Tuzona .map {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* aca termina "tuzona */
+
+/* aca arranca "cartas" */
+#medicos {
+    
+    margin: 0cm;
+    text-align: center;
+
+}
+#medicos .container {
+    padding: 100px 15px;
+    border-radius: 15px;
+    background-size: cover;
+}
+
+#medicos .Cartas {
+    margin: auto;
+    justify-content: center;    
+    background-position: center center;
+    background-size: cover;
+    
+    background-image: url("../media/medical-4510408.png");
+     box-sizing: cover;
+}
+
+.carta
+ {   
+    background-color: rgb(255, 255, 230);
+    margin: 15px 2px ;
+    border-radius: 20px;
+    background-position: center center;
+    background-size: cover;
+    min-width: 300px;
+    max-width: 700px;
+}
+
+.carta:hover
+{
+    transform:  scale(1.1);
+    
+}
+
+
+/* aca arranca zona contacto */
+.login {
+    background-color:rgb(255, 255, 230) ;
+    margin: auto;
+    width: auto;
+    max-width: 400px;
+    border-radius: 20px;
+    padding: 4.5em 3em;
+    box-shadow: 0 5px 10px -5px rgb(255, 255, 230 , 30%);
+    text-align: center;
+    display: grid;
+    gap: 2.5em;
+    margin-top: 3em;
+}
+ 
+.login h2 
+{
+    font-size:  2em;
+    margin-bottom: 0.5em;
+}
+.login p {
+    font-weight: 300;
+}
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+    margin-top: 3em;
+}
+
+.form_group {
+    position: relative;
+    
+}
+
+
+.form_input {
+    width: 100%;
+    background: none;
+    font-size: 1em;
+    padding:0.5em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid;
+}
+
+
+
+
+.form_label {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .8s color .3s;
+}
+
+.form_submit {
+    background: rgb(255, 255, 255);
+    color: blue;
+    font-weight: 300;
+    font-size: 1em;
+    padding: 0.8em 0;
+    border: none;
+    border-radius: 20px;
+}
+.form_line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: blue;
+    transform: scale(0);
+    transform: left bottom;
+    transition: transform .4s;
+
+}
+
+
+/*aca termina login*/
+
+/* aca arranca registrate */
+
+.registrate {
+    background-color:rgb(255, 255, 230) ;
+    margin: auto;
+    width: auto;
+    max-width: 400px;
+    border-radius: 20px;
+    padding: 4.5em 3em;
+    box-shadow: 0 5px 10px -5px rgb(255, 255, 230 , 30%);
+    text-align: center;
+    display: grid;
+    gap: 2.5em;
+    margin-top: 3em;
+}
+ 
+.registrate h2 
+{
+    font-size:  2em;
+    margin-bottom: 0.5em;
+}
+.registrate p {
+    font-weight: 300;
+}
+
+
+
+.imgmed img {
+    height: 300px;
+    width: 300px;
+}
+
+
+
+  @media (min-width: 720px) {
+    html {
+         scroll-behavior: smooth;
+    }
+    .container {
+        max-width: auto;
+        border-radius: 15px;
+        background-color: rgb(255, 255, 255);
+        margin: 15px 15px ;
+        padding: 15px 15px ;
+    }
+    header {
+        
+        position: relative; 
+        width: 100%;
+    }
+    header .container {
+        background-color: transparent;
+    }
+     #medicos .Cartas {
+        display: flex;
+       flex-wrap: wrap;
+        justify-content: center;
+        padding: 15px 15px;
+    
+    }
+    
+    #medicos .carta {
+        padding: 15px 15px;
+        margin: 25px;
+        max-width: 500px;
+        
+    }
+  
+    .bote {
+        position: absolute;
+        display: block;
+    }
+
+    .fichero {
+        position:absolute;
+        display:block;
+    }
+
+    .esteto {
+        position: absolute;
+        display: block;
+    }
+
+    #Tuzona .map {
+        display: flex;
+        flex-direction: column;
+        height: 140px;
+        width: 500px;
+    }
+    
+    #Tuzona .container {
+        background-color: rgb(255, 255, 255);
+        padding: 100px;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    #medico .container {
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(255, 255, 230);
+        padding: 100px;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    #medico .imgmed { 
+        display: flex;
+        flex-direction: column;
+    }
+   #medico .texmed {
+    margin: 15px;
+   }
+   #medico button {
+    font-size: 2em;
+    background-size: cover;
+    border-radius: 50px;
+    border: 15px 15px;
+    height: 250px;
+    width: 120px;
+   }
+}
+    #mapa .container {
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(255, 255, 255);
+        padding: 100px;
+       
+    }
+    #mapa .container .map {
+        padding: 10px;
+        
+    }
+    #mapa .container .map h3 {
+        padding: 10px;
+        
+    }
+    #mapa > .container > p {
+        margin-top: 40px;
+        padding: 10px;
+    }
+    
+    footer .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        padding: 15px;
+    }
+    footer  h4, h5 {
+        padding: 5px;
+        padding-left: 15px;
+    }
+    #Buscador .container {
+        display: flex;
+        flex-direction: row;
+        padding: 15px;
+        justify-content: center;
+    }
+    .busEsp {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: 200px;
+        margin-left: 200px;
+    }
+    .busNom {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: 200px;
+        margin-left: 200px;
+    }
+     ul {
+        
+        list-style: none;
+        font-size: 0;
+        
+    }
+    
+     li {
+        display: inline-block;
+        width: 25%;
+        position: relative;
+        font-size: 14px;
+        border: 1px solid;
+        width: auto;
+        height: auto;
+    }
+
+     ul  ul {
+        position: absolute;
+        display: none;
+    }
+     ul  ul  li {
+        display: block;
+    }
+    ul  li:hover  ul {
+        display: block;
+    }
+    
+    #Buscador button {
+        margin-top: 100px;
+        border-radius: 15px;
+        height: 150px;
+        width: 150px;
+
+    }
+
+    
+    
+
