@@ -195,7 +195,7 @@ nav a {
   
 }
 
-#Tuzona .map {
+#Tuzona .zona {
     display: flex;
     flex-direction: column;
     
@@ -362,20 +362,149 @@ nav a {
 /* pagina Tuzona
 */
 #mapa > .container {
+
     padding: 15px 15px;
     border-radius: 15px;
-    
-}
-#mapa > .container > .map {
-    width: 200px;
-    height: 200px;
-}
-#mapa > .container > .map > iframe {
-    padding: 15px 15px;
-    max-height: 200px;
-    max-width: 200px;
 }
 
+#mapa > .container > .map {
+    width: 300px;
+    height: 300px;
+}
+#mapa > .container > .map > iframe {
+    
+    max-height: 250px;
+    max-width: 250px;
+}
+#mapa .container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    padding: 50px;
+   
+}
+#mapa .container .map {
+    padding: 10px;
+    
+}
+#mapa .container .map h3 {
+    padding: 10px;
+    
+}
+#mapa > .container > p {
+    margin-left: 0;
+    margin-top: 40px;
+    padding: 10px;
+}
+/* aca termina pg tuZona*/
+
+footer .container {
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    grid-template-rows: 1f;
+    grid-template-areas: "contac donde conoce";
+    padding: 15px;
+}
+footer .contac {
+    display: flex;
+    flex-direction: column;
+    grid-area: contac;
+    padding: 10px;
+}
+footer .donde {
+    grid-area: donde;
+    padding: 10px;
+}
+footer .conoce {
+    grid-area: conoce;
+    padding: 10px;
+}
+footer  h4 {
+    font-size: small;
+    padding: 5px;
+    padding-left: 15px;
+}
+footer h5 {
+    font-size: small;
+    padding: 5px;
+    padding-left: 15px;
+}
+
+/* aca arranca pag buscador */
+#Buscador > .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr  ;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+    grid-template-areas:  " espe  espe   "
+                         "boton1  boton1 "
+                         "nombre  nombre "
+                         "boton2  boton2  ";
+    
+    
+    
+}
+.busEsp {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-area: espe;
+    
+} 
+.busNom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-area: nombre;
+    
+}
+.btnBus {
+    display: flex;
+    grid-area: boton1;
+    margin-bottom: 20px;
+    justify-content: center;
+
+}
+.btnBus2 {
+    display: flex;
+    grid-area: boton2;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+ ul {
+    
+    list-style: none;
+    font-size: 0;
+    
+}
+
+ li {
+    display: inline-block;
+    width: 25%;
+    position: relative;
+    font-size: 14px;
+    border: 1px solid;
+    width: auto;
+    height: auto;
+}
+
+ ul  ul {
+    position: absolute;
+    display: none;
+}
+ ul  ul  li {
+    display: block;
+}
+ul  li:hover  ul {
+    display: block;
+}
+
+#Buscador button {
+    margin-top: 100px;
+    border-radius: 15px;
+    height: 150px;
+    width: 150px;
+
+}
 
   @media (min-width: 720px) {
     html {
@@ -426,7 +555,7 @@ nav a {
         display: block;
     }
 
-    #Tuzona .map {
+    #Tuzona .zona {
         display: flex;
         flex-direction: column;
         height: 300px;
@@ -468,92 +597,34 @@ nav a {
     height: 250px;
     width: 120px;
    }
+   #Buscador > .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:  " espe  boton1   nombre  boton2"
+                         "espe  boton1 nombre  boton2"
+                         "espe  boton1 nombre  boton2"
+                         "espe  boton1  nombre  boton2";
+    
 }
-    #mapa .container {
-        display: flex;
-        flex-direction: row;
-        background-color: rgb(255, 255, 255);
-        padding: 100px;
-       
-    }
-    #mapa .container .map {
-        padding: 10px;
-        
-    }
-    #mapa .container .map h3 {
-        padding: 10px;
-        
-    }
-    #mapa > .container > p {
-        margin-top: 40px;
-        padding: 10px;
-    }
+.busEsp {
+    grid-area: espe;
+   
+} 
+.busNom {
     
-    footer .container {
-        display: flex;
-        flex-direction: row;
-        justify-content: end;
-        padding: 15px;
-    }
-    footer  h4, h5 {
-        padding: 5px;
-        padding-left: 15px;
-    }
-    #Buscador .container {
-        display: flex;
-        flex-direction: row;
-        padding: 15px;
-        justify-content: center;
-    }
-    .busEsp {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin-right: 200px;
-        margin-left: 200px;
-    }
-    .busNom {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin-right: 200px;
-        margin-left: 200px;
-    }
-     ul {
-        
-        list-style: none;
-        font-size: 0;
-        
-    }
+    grid-area: nombre;
+}
+.btnBus {
     
-     li {
-        display: inline-block;
-        width: 25%;
-        position: relative;
-        font-size: 14px;
-        border: 1px solid;
-        width: auto;
-        height: auto;
-    }
-
-     ul  ul {
-        position: absolute;
-        display: none;
-    }
-     ul  ul  li {
-        display: block;
-    }
-    ul  li:hover  ul {
-        display: block;
-    }
+    grid-area: boton1;
+}
+.btnBus2 {
     
-    #Buscador button {
-        margin-top: 100px;
-        border-radius: 15px;
-        height: 150px;
-        width: 150px;
-
-    }
+    grid-area: boton2;
+}
+}
+    
 
     
     
