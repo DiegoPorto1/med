@@ -152,7 +152,7 @@ nav a {
     width: 120px;
     
 }
- button:hover {
+ .heroe button:hover {
 
    background-size: cover;
     background-image: url("../media/puerta02.PNG") ;
@@ -173,7 +173,6 @@ nav a {
 #Tuzona .container {
     border-radius: 15px;
     background-size: contain;
-    
     display: flex;
     flex-direction: column;
     margin: 15px 15px;
@@ -199,9 +198,8 @@ nav a {
 #Tuzona .map {
     display: flex;
     flex-direction: column;
+    
 }
-
-
 
 /* aca termina "tuzona */
 
@@ -361,6 +359,22 @@ nav a {
     width: 300px;
 }
 
+/* pagina Tuzona
+*/
+#mapa > .container {
+    padding: 15px 15px;
+    border-radius: 15px;
+    
+}
+#mapa > .container > .map {
+    width: 200px;
+    height: 200px;
+}
+#mapa > .container > .map > iframe {
+    padding: 15px 15px;
+    max-height: 200px;
+    max-width: 200px;
+}
 
 
   @media (min-width: 720px) {
@@ -415,7 +429,7 @@ nav a {
     #Tuzona .map {
         display: flex;
         flex-direction: column;
-        height: 140px;
+        height: 300px;
         width: 500px;
     }
     
@@ -425,6 +439,10 @@ nav a {
         align-items: center;
         justify-content: center;
         
+    }
+    #Tuzona button {
+        border-radius: 15px;
+        height: 100px;
     }
     #medico .container {
         display: flex;
