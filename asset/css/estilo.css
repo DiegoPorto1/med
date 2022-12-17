@@ -198,6 +198,19 @@ nav a {
 #Tuzona .zona {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    
+}
+#Tuzona > .container > .zona > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 230);
+    border-radius: 5px 15px 5px 15px;
+    height: 150px;
+    width: 200px;
     
 }
 
@@ -371,20 +384,21 @@ nav a {
     width: 300px;
     height: 300px;
 }
-#mapa > .container > .map > iframe {
+#mapa  iframe {
     
-    max-height: 250px;
-    max-width: 250px;
+    height: 250px;
+    width: 290px;
+    
 }
 #mapa .container {
     display: flex;
     flex-direction: column;
     background-color: rgb(255, 255, 255);
-    padding: 50px;
+    padding: 25px;
    
 }
 #mapa .container .map {
-    padding: 10px;
+    padding: 0px;
     
 }
 #mapa .container .map h3 {
@@ -418,16 +432,24 @@ footer .donde {
 footer .conoce {
     grid-area: conoce;
     padding: 10px;
+    
 }
 footer  h4 {
     font-size: small;
     padding: 5px;
-    padding-left: 15px;
+    padding-left: 5px;
 }
 footer h5 {
     font-size: small;
     padding: 5px;
-    padding-left: 15px;
+    padding-left: 5px;
+}
+footer img {
+    width: 30%;
+}
+footer .imagRedes {
+    display: flex;
+    flex-direction: row;
 }
 
 /* aca arranca pag buscador */
@@ -569,10 +591,7 @@ ul  li:hover  ul {
         justify-content: center;
         
     }
-    #Tuzona button {
-        border-radius: 15px;
-        height: 100px;
-    }
+    
     #medico .container {
         display: flex;
         flex-direction: row;
@@ -622,6 +641,20 @@ ul  li:hover  ul {
 .btnBus2 {
     
     grid-area: boton2;
+}
+#mapa > .container {
+    display: flex;
+    flex-direction: row;
+}
+#mapa > .container > .map {
+    width: 600px;
+    height: 600px;
+        padding-bottom: 25px;
+    }
+#mapa  iframe {
+    padding: 10px;
+    height: 580px;
+    width: 600px;
 }
 }
     
