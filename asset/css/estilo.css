@@ -13,21 +13,23 @@
 
 } 
 
-
+body {
+    background-color: transparent !important;
+}
 
 html {
-     background-color: #e5e5f7;
+     
      opacity: 0.8;
      background-image:  radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
      background-size: 20px 20px;
      background-position: 0 0,10px 10px;
      scroll-behavior: smooth;
 }
-.container {
-     border-radius: 15px;
-     background-color: rgb(255, 255, 255);
-     margin: 15px 15px ;
-     padding: 15px 15px ;
+.containerCSS {
+     border-radius: 15px !important; 
+     background-color: rgb(255, 255, 255) !important;
+     margin: 15px 15px !important;
+     padding: 15px 15px !important;
      
 }
 a {
@@ -88,13 +90,13 @@ header img {
     animation-fill-mode: forwards;
 }
 
- header .container {
-    display: flex;
-    flex-direction: column;
-    border-top-left-radius: 20px 20px;
-    border-top-right-radius: 20px 20px;
-    margin: 15px 15px;
-    background-color: rgb(255, 255, 255, .25);
+ header .containerCSS {
+    display: flex !important;
+    flex-direction: column !important;
+    border-top-left-radius: 20px 20px !important;
+    border-top-right-radius: 20px 20px !important;
+    margin: 15px 15px !important;
+    background-color: rgb(255, 255, 255, .25) !important;
     
     
     
@@ -161,7 +163,7 @@ nav a {
 #hero h1 {
     padding: 25px 25px;
 }
-#hero .container {
+#hero .containerCSS {
     border-radius: 15px;
     margin: 15px 15px;
 
@@ -170,7 +172,7 @@ nav a {
 /* aca termina el hero */
 
 
-#Tuzona .container {
+#Tuzona .containerCSS {
     border-radius: 15px;
     background-size: contain;
     display: flex;
@@ -179,7 +181,7 @@ nav a {
 
 }
 
-#Tuzona .container {
+#Tuzona .containerCSS {
     display: flex;
     flex-direction: row;
    
@@ -203,7 +205,7 @@ nav a {
     gap: 15px;
     
 }
-#Tuzona > .container > .zona > button {
+#Tuzona > .containerCSS > .zona > button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -223,7 +225,7 @@ nav a {
     text-align: center;
 
 }
-#medicos .container {
+#medicos .containerCSS {
     padding: 100px 15px;
     border-radius: 15px;
     background-size: cover;
@@ -342,6 +344,13 @@ nav a {
 
 /* aca arranca registrate */
 
+.fondoCrea {
+    background-image: url(../media/medico3.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    border-radius: 20px;
+}
 .registrate {
     background-color:rgb(255, 255, 230) ;
     margin: auto;
@@ -370,19 +379,20 @@ nav a {
 .imgmed img {
     height: 300px;
     width: 300px;
-}
-
-/* pagina Tuzona
-*/
-#mapa > .container {
-
-    padding: 15px 15px;
     border-radius: 15px;
 }
 
-#mapa > .container > .map {
-    width: 300px;
-    height: 300px;
+ /*pagina Tuzona*/
+
+#mapa > .containerCSS {
+
+    padding: 15px 15px !important;
+    border-radius: 15px !important;
+}
+
+#mapa > .containerCSS > .map {
+    width: 300px !important;
+    height: 300px !important;
 }
 #mapa  iframe {
     
@@ -390,29 +400,29 @@ nav a {
     width: 290px;
     
 }
-#mapa .container {
+#mapa .containerCSS {
     display: flex;
     flex-direction: column;
     background-color: rgb(255, 255, 255);
-    padding: 25px;
+    padding: 25px !important;
    
 }
-#mapa .container .map {
+#mapa .containerCSS .map {
     padding: 0px;
     
 }
-#mapa .container .map h3 {
+#mapa .containerCSS .map h3 {
     padding: 10px;
     
 }
-#mapa > .container > p {
+#mapa > .containerCSS > p {
     margin-left: 0;
     margin-top: 40px;
     padding: 10px;
 }
-/* aca termina pg tuZona*/
+ /*aca termina pg tuZona*/
 
-footer .container {
+footer .containerCSS {
     display: grid;
     grid-template-columns: 40% 30% 30%;
     grid-template-rows: 1f;
@@ -453,7 +463,7 @@ footer .imagRedes {
 }
 
 /* aca arranca pag buscador */
-#Buscador > .container {
+#Buscador > .containerCSS {
     display: grid;
     grid-template-columns: 1fr 1fr  ;
     grid-template-rows: 1fr 1fr 1fr 1fr ;
@@ -532,7 +542,7 @@ ul  li:hover  ul {
     html {
          scroll-behavior: smooth;
     }
-    .container {
+    .containerCSS {
         max-width: auto;
         border-radius: 15px;
         background-color: rgb(255, 255, 255);
@@ -544,7 +554,7 @@ ul  li:hover  ul {
         position: relative; 
         width: 100%;
     }
-    header .container {
+    header .containerCSS {
         background-color: transparent;
     }
      #medicos .Cartas {
@@ -584,7 +594,7 @@ ul  li:hover  ul {
         width: 500px;
     }
     
-    #Tuzona .container {
+    #Tuzona .containerCSS {
         background-color: rgb(255, 255, 255);
         padding: 100px;
         align-items: center;
@@ -592,10 +602,10 @@ ul  li:hover  ul {
         
     }
     
-    #medico .container {
+    #medico .containerCSS {
         display: flex;
         flex-direction: row;
-        background-color: rgb(255, 255, 230);
+        background-color: rgb(255, 255, 255);
         padding: 100px;
         align-items: center;
         justify-content: center;
@@ -616,7 +626,7 @@ ul  li:hover  ul {
     height: 250px;
     width: 120px;
    }
-   #Buscador > .container {
+   #Buscador > .containerCSS {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr ;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -641,12 +651,14 @@ ul  li:hover  ul {
 .btnBus2 {
     
     grid-area: boton2;
-}
-#mapa > .container {
+} 
+
+/*
+#mapa > .containerCSS {
     display: flex;
     flex-direction: row;
 }
-#mapa > .container > .map {
+#mapa > .containerCSS > .map {
     width: 600px;
     height: 600px;
         padding-bottom: 25px;
@@ -656,6 +668,15 @@ ul  li:hover  ul {
     height: 580px;
     width: 600px;
 }
+*/
+footer img {
+    width: 15%;
+}
+footer .imagRedes {
+    display: flex;
+    flex-direction: row;
+}
+
 }
     
 
