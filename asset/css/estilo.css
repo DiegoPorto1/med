@@ -260,11 +260,13 @@ nav a {
 
 
 /* aca arranca zona contacto */
+
+
 .login {
     background-color:rgb(255, 255, 230) ;
-    margin: auto;
+    margin: auto ;
     width: auto;
-    max-width: 400px;
+    max-width: 600px;
     border-radius: 20px;
     padding: 4.5em 3em;
     box-shadow: 0 5px 10px -5px rgb(255, 255, 230 , 30%);
@@ -626,6 +628,25 @@ ul  li:hover  ul {
     height: 250px;
     width: 120px;
    }
+
+   #log .containerCSS{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:  " login  login   img  img"
+                         "login  login img  img";
+   }
+   .login {
+    grid-area: login;
+    margin-top: 0px;
+   }
+   #log .img {
+    background-image: url(../media/medica_login.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-area: img;
+    border-radius: 15px;
+   }
    #Buscador > .containerCSS {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr ;
@@ -684,7 +705,7 @@ footer .imagRedes {
         
     }
     100% {
-        transform: translateX(85%) scale(1);
+        transform: translateX(70%) scale(1);
     }
     
 }
@@ -696,7 +717,7 @@ footer .imagRedes {
             
     }
     100% {
-        transform: translateX(80%) scale(1);
+        transform: translateX(65%) scale(1);
     }
 }
 
@@ -705,7 +726,7 @@ footer .imagRedes {
          
  }
  100% {
-     transform: translateX(75%) scale(1) ;
+     transform: translateX(60%) scale(1) ;
  }
 }
     
