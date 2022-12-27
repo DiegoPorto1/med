@@ -32,6 +32,10 @@ html {
      padding: 15px 15px !important;
      
 }
+button {
+    border-radius: 15px;
+    background-color: antiquewhite;
+}
 a {
     text-decoration: none;
     color: rgb(161, 172, 179);
@@ -539,6 +543,11 @@ ul  li:hover  ul {
     width: 150px;
 
 }
+.animacion {
+    display: none;
+}
+/* pagina medico */
+
 
   @media (min-width: 720px) {
     html {
@@ -550,6 +559,23 @@ ul  li:hover  ul {
         background-color: rgb(255, 255, 255);
         margin: 15px 15px ;
         padding: 15px 15px ;
+        position: relative;
+    }
+    .containerAnimacion {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    .animacion {
+        display: flex;
+        position: absolute;
+        animation-name: movimiento;
+        animation-duration: 5s;
+        animation-fill-mode: forwards;
+        top: 35px;
+        left: -200px;
+        z-index: 100;
+
     }
     header {
         
@@ -574,20 +600,7 @@ ul  li:hover  ul {
         
     }
   
-    .bote {
-        position: absolute;
-        display: block;
-    }
-
-    .fichero {
-        position:absolute;
-        display:block;
-    }
-
-    .esteto {
-        position: absolute;
-        display: block;
-    }
+    
 
     #Tuzona .zona {
         display: flex;
@@ -604,31 +617,7 @@ ul  li:hover  ul {
         
     }
     
-    #medico .containerCSS {
-        display: flex;
-        flex-direction: row;
-        background-color: rgb(255, 255, 255);
-        padding: 100px;
-        align-items: center;
-        justify-content: center;
-        
-    }
-    #medico .imgmed { 
-        display: flex;
-        flex-direction: column;
-    }
-   #medico .texmed {
-    margin: 15px;
-   }
-   #medico button {
-    font-size: 2em;
-    background-size: cover;
-    border-radius: 50px;
-    border: 15px 15px;
-    height: 250px;
-    width: 120px;
-   }
-
+    
    #log .containerCSS{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr ;
@@ -699,36 +688,23 @@ footer .imagRedes {
 }
 
 }
-@keyframes movimientobote{
+@keyframes movimiento{
     0% {
-       transform: translateX(-60%) scale(0.1);
+        left: -200px;
+       transform:scale(0.1);
         
     }
+    50% {
+        left: 400px;
+        transform:  scale(1);
+    }
     100% {
-        transform: translateX(70%) scale(1);
+        position: static;
     }
     
 }
- @keyframes movimientofichero {
-    
  
-    0% {
-       transform: translateX(-55%) scale(0.1);
-            
-    }
-    100% {
-        transform: translateX(65%) scale(1);
-    }
-}
 
-@keyframes movimientoesteto { 0% {
-    transform: translateX(-50%) scale(0.1);
-         
- }
- 100% {
-     transform: translateX(60%) scale(1) ;
- }
-}
     
 
     

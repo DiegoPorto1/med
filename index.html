@@ -7,23 +7,25 @@
     <link rel="stylesheet" href="./asset/css/estilo.css">
     <link rel="shortcut icon" href="./asset/media/favicon.png">
     <title>Med</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 <header>
 <div class="containerCSS">
-    <h1 class="logo"> Tus Medicos en un lugar</h1>
+    <div class="containerAnimacion">
+        <div class="animacion">
+          <img src="./asset/media/medical-bote.png" alt="">
+          <img src="./asset/media/medical-fichero.png" alt="">
+          <img src="./asset/media/medical-esteto.png" alt="">
+        </div>
+        <h1 class="logo"> Tus Medicos en un lugar</h1>
+    </div>
     <nav class="link">
         <a href="#login">Login</a>
         <a href="#medicos">Medicos</a>
         <a href="#Tuzona">Tu zona</a>
         <a href="#hero">Incio</a>
-    </nav>
-    <div class="bote">  <img src="./asset/media/medical-bote.png");
-         alt=""></div>
-         <div class="fichero"><img src="./asset/media/medical-fichero.png" alt=""></div>
-         <div class="esteto"><img src="./asset/media/medical-esteto.png" alt=""></div>
-</div>
-
+    </nav> 
 </div>
 </header>
    <section id="hero">
@@ -56,7 +58,7 @@
         <h2>Medicos</h2>
         <div class="Cartas">
             
-            <div class="carta">
+            <div data-aos="fade-right"  data-aos-duration="500" class="carta">
 
                 <h3>Cardiologos</h3>
                 <p>Elegi la primera, siempre, pero siempre es mejor</p>
@@ -67,7 +69,7 @@
                 
               </div>
               
-            <div class="carta">
+            <div data-aos="flip-right" class="carta">
                 <h3>Dermatologo</h3>
                 <p>Usa el que te sirve </p>
                 <a href="derma">derma1</a>
@@ -75,25 +77,25 @@
                 <a href="derma">derma3</a>
                 <a href="derma">derma4</a>
             </div>
-             <div class="carta">
+             <div data-aos="fade-left" class="carta">
                 <h3>Pediatra</h3>
                 <p> Aca vas a tener informacion, pero no te pases de listo</p>
                  <a href="Pediatra">Pediatra</a>
               
               </div>
-              <div class="carta">
+              <div data-aos="fade-right" class="carta">
                 <h3>Pediatra</h3>
                 <p> Aca vas a tener informacion, pero no te pases de listo</p>
                  <a href="Pediatra">Pediatra</a>
               
               </div>
-              <div class="carta">
+              <div data-aos="flip-left" class="carta">
                 <h3>Pediatra</h3>
                 <p> Aca vas a tener informacion, pero no te pases de listo</p>
                  <a href="Pediatra">Pediatra</a>
               
               </div>
-              <div class="carta">
+              <div data-aos="fade-left" class="carta">
                 <h3>Pediatra</h3>
                 <p> Aca vas a tener informacionpero no te pases de listo</p>
                  <a href="Pediatra">Pediatra</a>
@@ -157,6 +159,12 @@
     </div>
 
 </footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 
 </html>
+<script>
+    AOS.init();
+    
+  </script>
