@@ -1,0 +1,62 @@
+body {
+    background-color: transparent !important;
+}
+
+html {
+     
+     opacity: 0.8;
+     background-image:  radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+     background-size: 20px 20px;
+     background-position: 0 0,10px 10px;
+     scroll-behavior: smooth;
+}
+.containerCSS {
+     border-radius: 15px !important; 
+     background-color: rgb(255, 255, 255) !important;
+     margin: 15px 15px !important;
+     padding: 15px 15px !important;
+     
+}
+a {
+    text-decoration: none;
+    color: rgb(161, 172, 179);
+    list-style: none;
+}
+a:hover {
+    color: rgb(78,45, 224);
+    font-size: 1.10em;
+}
+
+h1 {font-size: 3em;
+    text-decoration: solid;
+    
+}
+@media (min-width: 720px) {
+    html {
+         scroll-behavior: smooth;
+    }
+    .containerCSS {
+        max-width: auto;
+        border-radius: 15px;
+        background-color: $colorprincipal;
+        margin: 15px 15px ;
+        padding: 15px 15px ;
+        position: relative;
+    }
+    .containerAnimacion {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    .animacion {
+        display: flex;
+        position: absolute;
+        animation-name: movimiento;
+        animation-duration: 5s;
+        animation-fill-mode: forwards;
+        top: 35px;
+        left: -200px;
+        z-index: 100;
+
+    }
+    }

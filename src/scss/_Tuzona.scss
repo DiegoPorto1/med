@@ -1,0 +1,51 @@
+#Tuzona 
+.imagen {
+    background-image: url("../media/medicozona.jpg");
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-size: cover;
+  }
+  .zona {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: auto;
+}
+.containerCSS {
+    border-radius: 15px;
+    background-size: contain;
+    display: flex;
+    flex-direction: row;
+    margin: 15px 15px;
+    font-size: 1.5rem;
+    > .zona > button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $Colorsecundrio;
+        border-radius: 5px 15px 5px 15px;
+        height: 150px;
+        width: 200px;
+    
+     }
+}
+@media (min-width: 720px) {
+    
+  #Tuzona .zona {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      width: auto;
+  }
+  
+  #Tuzona .containerCSS {
+      background-color: rgb(255, 255, 255);
+      padding: 100px;
+      align-items: center;
+      justify-content: center;
+      
+  }
+  }

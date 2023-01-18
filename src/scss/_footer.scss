@@ -1,0 +1,64 @@
+footer .containerCSS {
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    grid-template-rows: 1f;
+    grid-template-areas: "contac donde conoce";
+    padding: 15px;
+
+}
+footer {
+    
+
+.contac {
+    display: flex;
+    flex-direction: column;
+    grid-area: contac;
+    padding: 10px;
+}
+.donde {
+    grid-area: donde;
+    padding: 10px;
+}
+.conoce {
+    grid-area: conoce;
+    padding: 10px;
+    
+}
+h4 {
+    font-size: small;
+    padding: 5px;
+    padding-left: 5px;
+}
+h5 {
+    font-size: small;
+    padding: 5px;
+    padding-left: 5px;
+}
+img {
+    width: 30%;
+}
+.imagRedes {
+    display: flex;
+    flex-direction: row;
+}
+ }
+ @media (min-width: 720px) {
+    footer {
+        h4 {
+            font-size: 2rem;
+        }
+        h5 {
+            font-size: 1.5rem;
+        }
+    };
+    footer img {
+        width: 15%;
+    }
+    footer .imagRedes {
+        display: flex;
+        flex-direction: row;
+        
+    }
+    
+    }
+    

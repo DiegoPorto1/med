@@ -1,0 +1,85 @@
+#medicos {
+    
+    margin: 0cm;
+    text-align: center;
+    .containerCSS {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 100px 15px;
+        border-radius: 15px;
+        background-size: cover;
+       h2 {
+        font-size: 6rem;
+       }
+    }
+    .Cartas {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px; 
+        justify-content: center;    
+        background-position: center center;
+        background-size: cover;
+        background-image: url("../media/medical-4510408.png");
+       
+   }
+   }
+.carta-1 {   
+    @include carta;
+}
+.carta-2 {
+    @extend .carta-1;
+    background-color: $colorterciario;
+}
+.carta-3 {   
+    @extend .carta-1;
+    background-color: $colorcuarto;
+}
+.carta-4 {
+    @include carta;
+
+}
+.carta-5 {   
+    @extend .carta-1;
+    background-color: $colorterciario;
+}
+.carta-6 {
+    @extend .carta-1;
+    background-color: $colorcuarto;
+
+}
+    
+
+
+
+
+@media (min-width: 720px) {
+    
+   
+    #medicos .Cartas {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       padding: 15px 15px;
+   
+   }
+   
+   .carta-1 {   
+    @include carta720;
+}
+.carta-2 {
+    @include carta720;
+}
+.carta-3 {   
+    @include carta720;
+}
+.carta-4 {
+    @include carta720;
+}
+.carta-5 {   
+    @include carta720;
+}
+.carta-6 {
+    @include carta720;
+}
+   }

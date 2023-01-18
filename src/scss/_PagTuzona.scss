@@ -1,0 +1,56 @@
+#mapa  {
+iframe {
+    
+    height: 250px;
+    width: 290px;
+    
+}
+.containerCSS 
+    {
+        
+        background-color: $colorprincipal;
+        padding: 15px 15px !important;
+        border-radius: 15px !important;
+    > .MapTuzona {
+        width: 300px ;
+        height: 300px ;
+        padding: 0px;
+      
+    }
+}
+     p {
+        margin-left: 0;
+        margin-top: 40px;
+        padding: 10px;
+    }
+    @media (min-width:720px){ 
+        .containerTuzona {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:  "titulo titulo titulo titulo"
+                          "mapa mapa texto texto"
+                          "mapa mapa texto texto"
+                          "mapa mapa texto texto"
+                          "mapa mapa texto texto";
+.tituloTuzona {
+                            grid-area: titulo;
+                            padding: 10px;
+                            
+                        }
+.MapTuzona {
+                            display: flex;
+                            grid-area: mapa;
+   }
+.textTuzona {
+              grid-area: texto;
+              }
+   }
+   .MapTuzona  > iframe {
+    width: 800px ;
+    height: 500px;
+    padding: 0px;
+  
+}
+} 
+}

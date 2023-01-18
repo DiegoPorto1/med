@@ -1,0 +1,91 @@
+header{
+    @media (min-width: 720px) {
+    
+        header {
+            
+            position: relative; 
+            width: 100%;
+        }
+        header .containerCSS {
+            background-color: transparent;
+        }
+        }
+    img {
+        height: 50px;
+        width: 50px;
+       }
+       
+    .bote {
+        inline-size: 100%;
+        background-repeat: no-repeat;
+        display: none;
+        animation: movimientobote;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        
+    }
+    .esteto {
+        inline-size: 100%;
+        display: none;
+        background-repeat: no-repeat;
+        animation: movimientoesteto;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        
+    }
+    .fichero {
+        inline-size: 100%;
+        display: none;
+        background-size: cover ;
+        background-repeat: no-repeat;
+        position: absolute;
+        animation: movimientofichero;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+    }
+    
+     .containerCSS {
+        display: flex !important;
+        flex-direction: column !important;
+        border-top-left-radius: 20px 20px !important;
+        border-top-right-radius: 20px 20px !important;
+        margin: 15px 15px !important;
+        background-color: rgb(255, 255, 255, .25) !important;
+        
+     }
+    .logo {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 10px;
+        
+    }
+    .link {
+    
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 10px;
+        align-items: flex-end;
+        a {
+            color: black ;
+        }
+    }
+    nav a {
+        padding: 5px;
+        
+    }
+  }
+  @keyframes movimiento {
+    0% {
+        left: -200px;
+       transform:scale(0.1);
+        
+    }
+    50% {
+        left: 400px;
+        transform:  scale(1);
+    }
+    100% {
+        position: static;
+    }
+ }
+ 

@@ -1,0 +1,77 @@
+#Buscador > .containerCSS {
+    display: grid;
+    grid-template-columns: 1fr 1fr  ;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+    grid-template-areas:  " espe  espe   "
+                         "boton1  boton1 "
+                         "nombre  nombre "
+                         "boton2  boton2  ";
+    
+    
+    
+}
+.busEsp {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-area: espe;
+    
+} 
+.busNom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-area: nombre;
+    
+}
+.btnBus {
+    display: flex;
+    grid-area: boton1;
+    margin-bottom: 20px;
+    justify-content: center;
+
+}
+.btnBus2 {
+    display: flex;
+    grid-area: boton2;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+ ul {
+    
+    list-style: none;
+    font-size: 0;
+    
+}
+
+ li {
+    display: inline-block;
+    width: 25%;
+    position: relative;
+    font-size: 14px;
+    border: 1px solid;
+    width: auto;
+    height: auto;
+}
+
+ ul  ul {
+    position: absolute;
+    display: none;
+}
+ ul  ul  li {
+    display: block;
+}
+ul  li:hover  ul {
+    display: block;
+}
+
+#Buscador button {
+    margin-top: 100px;
+    border-radius: 15px;
+    height: 150px;
+    width: 150px;
+
+}
+.animacion {
+    display: none;
+}

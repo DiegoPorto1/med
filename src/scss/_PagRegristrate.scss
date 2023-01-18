@@ -1,0 +1,36 @@
+.fondoCrea {
+    background-image: url(../media/medico3.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    border-radius: 20px;
+}
+.registrate {
+    background-color:$colorprincipal ;
+    margin: auto;
+    width: auto;
+    max-width: 400px;
+    border-radius: 20px;
+    padding: 4.5em 3em;
+    box-shadow: 0 5px 10px -5px rgb(255, 255, 230 , 30%);
+    text-align: center;
+    display: grid;
+    gap: 2.5em;
+    margin-top: 3em;
+    h2 
+    {
+        font-size:  2em;
+        margin-bottom: 0.5em;
+    }
+    p {
+        font-weight: 300;
+    }
+    
+}
+ 
+
+.imgmed img {
+    height: 300px;
+    width: 300px;
+    border-radius: 15px;
+}
