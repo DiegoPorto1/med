@@ -761,4 +761,41 @@ ul li:hover ul {
     align-items: center;
     justify-content: center;
   }
+}
+.containerMedico {
+  display: flex;
+  flex-direction: column;
+}
+.containerMedico .imgmed img {
+  max-width: 500px;
+  max-height: 500px;
+}
+.containerMedico .texmed {
+  size-adjust: cover;
+}
+.containerMedico .button2 {
+  margin: 100px 0px 100px 50px;
+}
+
+@media (min-width: 1200px) {
+  .containerMedico {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "imag imag btn btn" "imag imag btn btn" "texto texto texto texto" "texto texto texto texto";
+  }
+  .imgmed {
+    grid-area: imag;
+  }
+  .imgmed > img {
+    width: 600px;
+    height: 600px;
+  }
+  .button2 {
+    grid-area: btn;
+    justify-content: center;
+  }
+  .texmed {
+    grid-area: texto;
+  }
 }/*# sourceMappingURL=estilo.css.map */
