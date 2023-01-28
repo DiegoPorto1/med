@@ -1,8 +1,11 @@
+
+
+
 .containerMedico {
     display: flex;
     flex-direction: column;
     .imgmed img {
-        max-width:500px;
+        size-adjust: cover;
         max-height:500px;
     }
     .texmed {
@@ -14,6 +17,11 @@
 }
 
 
+@media (max-width: 800px) {
+    .imgmed img {
+        width: 300px;
+    }
+}
 
 
 @media (min-width: 1200px) {
